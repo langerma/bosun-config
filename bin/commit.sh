@@ -4,4 +4,4 @@
 #echo $2 >> /tmp/args.txt
 #echo $3 >> /tmp/args.txt
 
-cd /opt/bosun/conf && /bin/git commit -am "$2 : $3"
+cd /opt/bosun/conf && /usr/local/bin/git commit -am "$2 : $3"
