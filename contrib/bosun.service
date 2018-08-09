@@ -1,0 +1,14 @@
+[Unit]
+Description=Bosun Service
+After=network.target
+#After=docker.service
+After=rsyslog.service
+
+[Service]
+Type=simple
+User=root
+ExecStart=/opt/bosun/bin/bosun -c /opt/bosun/conf/bosun.conf
+Restart=on-abort
+
+[Install]
+WantedBy=multi-user.target
