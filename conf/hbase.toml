@@ -1,0 +1,16 @@
+#Direct to Bosun
+#Host = "localhost:8070"
+
+#Send to tsdbrelay. Use TSDBRELAY_OPTS environment variable for forwarding options
+Host = "localhost:14242"
+
+BatchSize = 5000
+
+#Monitoring of hbase inside the container
+HadoopHost = "127.0.0.1:16030"
+
+#Redis or ledis based external counters. See https://godoc.org/bosun.org/cmd/tsdbrelay
+#[[RedisCounters]]
+#    Server = "localhost:9565"
+
+#[[hbase]]
